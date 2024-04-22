@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "name": "header-ssr",
+      "path": "header-ssr"
+    },
+    {
+      "name": "home-ssr",
+      "path": "home-ssr"
+    },
+    {
+      "name": "host-ssr",
+      "path": "host-ssr"
+    },
+    {
+      "name": "login",
+      "path": "login"
+    },
+    {
+      "name": "login-ssr",
+      "path": "login-ssr"
+    },
+    {
+      "name": "cart",
+      "path": "cart"
+    },
+    {
+      "name": "cart-ssr",
+      "path": "cart-ssr"
+    }
+  ]
+}

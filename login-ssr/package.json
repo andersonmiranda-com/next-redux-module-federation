@@ -1,0 +1,37 @@
+{
+  "name": "login-ssr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "rm -rf .next; yarn build-style && NEXT_PRIVATE_LOCAL_WEBPACK=true next dev --port 3003",
+    "build": "yarn build-style && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-style": "npx tailwindcss -o ./src/styles/login-styles.css"
+  },
+  "dependencies": {
+    "@cencommerce/paris-uikit": "2.19.2",
+    "@module-federation/nextjs-mf": "^8.3.8",
+    "@module-federation/utilities": "^3.0.11",
+    "@reduxjs/toolkit": "^2.2.3",
+    "css-loader": "^7.1.1",
+    "next": "14.2.2",
+    "postcss-loader": "^8.1.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-redux": "^9.1.1",
+    "redux": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "webpack": "^5.91.0"
+  }
+}
