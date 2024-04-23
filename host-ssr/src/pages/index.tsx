@@ -4,22 +4,8 @@ import dynamic from "next/dynamic";
 import type { RootState } from "@/store";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 
-// const HeaderRemote = dynamic(() => import("header/Header"), { ssr: true });
-// const HomeRemote = dynamic(() => import("home/Home"), { ssr: true });
-
-const HeaderRemote = process.browser
-  ? lazy(() => {
-      const mod = import("header/Header");
-      return mod;
-    })
-  : () => null;
-
-const HomeRemote = process.browser
-  ? lazy(() => {
-      const mod = import("home/Home");
-      return mod;
-    })
-  : () => null;
+const HeaderRemote = dynamic(() => import("header/Header"), { ssr: true });
+const HomeRemote = dynamic(() => import("home/Home"), { ssr: true });
 
 import "header/styles";
 import "home/styles";

@@ -15,7 +15,6 @@ const Header = () => {
   return (
     <div className="hd-flex hd-items-center hd-justify-between hd-py-2 hd-px-4 hd-h-20 hd-text-white hd-bg-primary-500 ">
       <Brand customSize={50} />
-
       <div className="hd-flex hd-items-center hd-gap-2">
         {sessionData.isLoggedIn && <div>Hola {sessionData.firstName}</div>}
         <Button

@@ -17,7 +17,7 @@ const initialState = {
       id: "1",
       name: "iPhone 13 Pro Max",
       price: 1000,
-      quantity: 0,
+      quantity: 1,
     },
   ],
 };
