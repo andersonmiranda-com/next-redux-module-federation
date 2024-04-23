@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "rm -rf .next; yarn build-style && NEXT_PRIVATE_LOCAL_WEBPACK=true next dev --port 3004",
-    "build": "yarn build-style && next build",
-    "start": "next start",
+    "build": "yarn build-style && NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "next start --port 3004",
     "lint": "next lint",
     "build-style": "npx tailwindcss -o ./src/styles/cart-styles.css"
   },

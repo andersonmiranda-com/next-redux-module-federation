@@ -3,13 +3,9 @@ import headerReducer from "@/store/slices/headerSlice";
 import loginReducer from "login/loginReducer";
 import cartReducer from "cart/cartReducer";
 
-const staticReducers = {
-  header: headerReducer,
-};
-
 const store = configureStore({
   reducer: {
-    header: headerReducer,
+    host: headerReducer,
     login: loginReducer,
     cart: cartReducer,
   },

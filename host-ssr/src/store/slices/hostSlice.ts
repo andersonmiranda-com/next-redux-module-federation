@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+  appName: "host",
+};
+
 const hostSlice = createSlice({
   name: "hostSlice",
-  initialState: {
-    appName: "host",
-  },
+  initialState,
   reducers: {},
 });
 

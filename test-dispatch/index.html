@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dispatch Event Test</title>
+  </head>
+  <body>
+    <h1>DispatchEvent Test</h1>
+    <button id="testButton">Test dispatchEvent</button>
+    <p id="output">Event not dispatched yet.</p>
+
+    <script>
+      // Define a custom event with some details
+      var customEvent = new CustomEvent("customEvent", {
+        detail: { message: "Custom event was triggered" },
+      });
+
+      // Add an event listener for the custom event
+      window.addEventListener("customEvent", function (e) {
+        document.getElementById("output").innerHTML =
+          "Received: " + e.detail.message;
+      });
+
+      // Add an event listener to the button to trigger the dispatch
+      document
+        .getElementById("testButton")
+        .addEventListener("click", function () {
+          window.dispatchEvent(customEvent);
+        });
+    </script>
+  </body>
+</html>

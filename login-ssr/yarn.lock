@@ -42,10 +42,10 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@cencommerce/paris-uikit@2.19.2":
-  version "2.19.2"
-  resolved "https://registry.yarnpkg.com/@cencommerce/paris-uikit/-/paris-uikit-2.19.2.tgz#3292887ef39de11280d0cff9f8405d7cba109c85"
-  integrity sha512-T/ctUu03wV/ZfkBbWd7UBiMbRbbYNF4vI3+8YLh6jvatiaCaJgEzwuk7S4v/unH1QbOwnUSuiCKRKtTyTUwrFQ==
+"@cencommerce/paris-uikit@^2.21.2":
+  version "2.21.2"
+  resolved "https://registry.yarnpkg.com/@cencommerce/paris-uikit/-/paris-uikit-2.21.2.tgz#6e3337dc233edf30ab34ec03aaa48880db635ade"
+  integrity sha512-48K2zXrAAjrHhKwcG7W8/H/fUCPb3f+1rTh6kojzNYMMbQlaixS3w5NERzRDI9FooJ5O7Sgxm7mDKV5FtCjpgw==
   dependencies:
     "@hookform/resolvers" "^3.1.0"
     cross-env "^7.0.3"

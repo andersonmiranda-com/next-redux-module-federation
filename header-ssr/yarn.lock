@@ -42,10 +42,10 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@cencommerce/paris-uikit@2.19.2":
-  version "2.19.2"
-  resolved "https://registry.yarnpkg.com/@cencommerce/paris-uikit/-/paris-uikit-2.19.2.tgz#3292887ef39de11280d0cff9f8405d7cba109c85"
-  integrity sha512-T/ctUu03wV/ZfkBbWd7UBiMbRbbYNF4vI3+8YLh6jvatiaCaJgEzwuk7S4v/unH1QbOwnUSuiCKRKtTyTUwrFQ==
+"@cencommerce/paris-uikit@^2.21.2":
+  version "2.21.2"
+  resolved "https://registry.yarnpkg.com/@cencommerce/paris-uikit/-/paris-uikit-2.21.2.tgz#6e3337dc233edf30ab34ec03aaa48880db635ade"
+  integrity sha512-48K2zXrAAjrHhKwcG7W8/H/fUCPb3f+1rTh6kojzNYMMbQlaixS3w5NERzRDI9FooJ5O7Sgxm7mDKV5FtCjpgw==
   dependencies:
     "@hookform/resolvers" "^3.1.0"
     cross-env "^7.0.3"
@@ -2892,6 +2892,11 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+next-redux-wrapper@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/next-redux-wrapper/-/next-redux-wrapper-8.1.0.tgz#d9c135f1ceeb2478375bdacd356eb9db273d3a07"
+  integrity sha512-2hIau0hcI6uQszOtrvAFqgc0NkZegKYhBB7ZAKiG3jk7zfuQb4E7OV9jfxViqqojh3SEHdnFfPkN9KErttUKuw==
 
 next@14.2.2:
   version "14.2.2"

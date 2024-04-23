@@ -1,12 +1,25 @@
+import { lazy } from "react";
 import dynamic from "next/dynamic";
 
 import type { RootState } from "@/store";
-import { setSessionData } from "login/loginReducer";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
-import { Button } from "@cencommerce/paris-uikit";
 
-const HeaderRemote = dynamic(() => import("header/Header"), { ssr: true });
-const HomeRemote = dynamic(() => import("home/Home"), { ssr: true });
+// const HeaderRemote = dynamic(() => import("header/Header"), { ssr: true });
+// const HomeRemote = dynamic(() => import("home/Home"), { ssr: true });
+
+const HeaderRemote = process.browser
+  ? lazy(() => {
+      const mod = import("header/Header");
+      return mod;
+    })
+  : () => null;
+
+const HomeRemote = process.browser
+  ? lazy(() => {
+      const mod = import("home/Home");
+      return mod;
+    })
+  : () => null;
 
 import "header/styles";
 import "home/styles";

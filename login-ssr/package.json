@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "rm -rf .next; yarn build-style && NEXT_PRIVATE_LOCAL_WEBPACK=true next dev --port 3003",
-    "build": "yarn build-style && next build",
-    "start": "next start",
+    "build": "yarn build-style && NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+    "start": "next start --port 3003",
     "lint": "next lint",
     "build-style": "npx tailwindcss -o ./src/styles/login-styles.css"
   },
   "dependencies": {
-    "@cencommerce/paris-uikit": "2.19.2",
+    "@cencommerce/paris-uikit": "^2.21.2",
     "@module-federation/nextjs-mf": "^8.3.8",
     "@module-federation/utilities": "^3.0.11",
     "@reduxjs/toolkit": "^2.2.3",
